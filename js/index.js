@@ -40,4 +40,13 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
-
+// Update nav content
+const navigation = document.getElementsByTagName('a');
+navigation[0] = "Services";
+navigation[1] = "Product";
+navigation[2] = "Vision";
+navigation[3] = "Features";
+navigation[4] = "About";
+navigation[5] = "Contact";
+// Put navigation on page in front of logo
+logo.prepend(navigation);

@@ -60,3 +60,9 @@ ctaTitle[0].textContent = "Dom Is Awesome";
 
 // Add ctaTitle to page
 logo.append(ctaTitle);
+
+// Update button
+const startButton = document.querySelector('button');
+startButton.textContent = "Get Started";
+
+// 

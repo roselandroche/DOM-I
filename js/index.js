@@ -40,13 +40,23 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
 // Update nav content
 const navigation = document.getElementsByTagName('a');
-navigation[0] = "Services";
-navigation[1] = "Product";
-navigation[2] = "Vision";
-navigation[3] = "Features";
-navigation[4] = "About";
-navigation[5] = "Contact";
+
+navigation[0].textContent = "Services";
+navigation[1].textContent = "Product";
+navigation[2].textContent = "Vision";
+navigation[3].textContent = "Features";
+navigation[4].textContent = "About";
+navigation[5].textContent = "Contact";
+
 // Put navigation on page in front of logo
 logo.prepend(navigation);
+
+// Update 'cta' section
+const ctaTitle = document.getElementsByTagName('h1');
+ctaTitle[0].textContent = "Dom Is Awesome";
+
+// Add ctaTitle to page
+logo.append(ctaTitle);

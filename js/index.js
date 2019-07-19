@@ -86,3 +86,27 @@ topPar[1].textContent = "About content elementum magna eros, ac posuere elvit te
 const midImg = document.querySelector('.middle-img');
 midImg.src = "img/mid-page-accent.jpg";
 
+// Update bottom-content h4
+const bottomHeading = document.querySelectorAll('.bottom-content h4');
+bottomHeading[0].textContent = "Services";
+bottomHeading[1].textContent = "Product";
+bottomHeading[2].textContent = "Vision";
+
+// Update bottom-content p
+const bottomPar = document.querySelectorAll('.bottom-content p');
+bottomPar[0].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+bottomPar[1].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+bottomPar[2].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+// Update contact
+const contTitle = document.querySelector('.contact h4');
+contTitle.textContent = "Contact";
+
+const contPar = document.querySelectorAll('.contact p');
+contPar[0].textContent = "123 Way 456 Street Somewhere, USA";
+contPar[1].textContent = "1 (888) 888-8888";
+contPar[2].textContent = "sales@greatidea.io";
+
+// Update footer
+const foot = document.querySelector('footer p');
+foot.textContent = "Copyright Great Idea! 2018";

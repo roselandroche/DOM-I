@@ -42,7 +42,7 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // Update nav content
-const navigation = document.getElementsByTagName('a');
+const navigation = document.querySelectorAll('a');
 
 navigation[0].textContent = "Services";
 navigation[1].textContent = "Product";
@@ -51,12 +51,18 @@ navigation[3].textContent = "Features";
 navigation[4].textContent = "About";
 navigation[5].textContent = "Contact";
 
+// Make nav green
+navigation.forEach(navItem => navItem.style.color = "green");
+
+// Add two new nav items
+
+
 // Put navigation on page in front of logo
 logo.prepend(navigation);
 
 // Update 'cta' section
 const ctaTitle = document.querySelector('h1');
-ctaTitle.textContent = "Dom Is Awesome";
+ctaTitle.innerText = "Dom\nIs\nAwesome";
 
 // Update button
 const startButton = document.querySelector('button');
@@ -100,7 +106,7 @@ const contTitle = document.querySelector('.contact h4');
 contTitle.textContent = "Contact";
 
 const contPar = document.querySelectorAll('.contact p');
-contPar[0].textContent = "123 Way 456 Street Somewhere, USA";
+contPar[0].innerText = "123 Way 456 Street\nSomewhere, USA";
 contPar[1].textContent = "1 (888) 888-8888";
 contPar[2].textContent = "sales@greatidea.io";
 

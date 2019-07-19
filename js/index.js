@@ -55,10 +55,17 @@ navigation[5].textContent = "Contact";
 navigation.forEach(navItem => navItem.style.color = "green");
 
 // Add two new nav items
+const reviews = document.createElement('a');
+reviews.textContent = "Reviews";
+reviews.href = "#";
+reviews.style.color = "purple";
+navigation[5].append(reviews);
 
-
-// Put navigation on page in front of logo
-logo.prepend(navigation);
+const intro = document.createElement('a');
+intro.textContent = "Introduction";
+intro.href = "#";
+intro.style.color = "purple";
+navigation[0].prepend(intro);
 
 // Update 'cta' section
 const ctaTitle = document.querySelector('h1');
@@ -113,3 +120,4 @@ contPar[2].textContent = "sales@greatidea.io";
 // Update footer
 const foot = document.querySelector('footer p');
 foot.textContent = "Copyright Great Idea! 2018";
+foot.style.fontSize = "2.4rem";

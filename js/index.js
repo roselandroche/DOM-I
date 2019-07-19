@@ -69,3 +69,18 @@ startButton.textContent = "Get Started";
 const ctaImg = document.getElementById('cta-img');
 ctaImg.src = "img/header-img.png";
 
+// Update top-content h4 text content
+const topText = document.querySelectorAll('.top-content h4');
+topText[0].textContent = "Features";
+topText[1].textContent = "About";
+
+// Add topText[0] to page
+ctaImg.append(topText);
+
+// Update top-content p text
+const topPar = document.querySelectorAll('.top-content p');
+topPar[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+topPar[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+// Add topPar to page
+topText.append(topPar);

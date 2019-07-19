@@ -65,4 +65,7 @@ logo.append(ctaTitle);
 const startButton = document.querySelector('button');
 startButton.textContent = "Get Started";
 
-// 
+// Add img
+const ctaImg = document.getElementById('cta-img');
+ctaImg.src = "img/header-img.png";
+

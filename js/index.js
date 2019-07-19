@@ -82,5 +82,7 @@ const topPar = document.querySelectorAll('.top-content p');
 topPar[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 topPar[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
-// Add topPar to page
-topText.append(topPar);
+// Update middle-img
+const midImg = document.querySelector('.middle-img');
+midImg.src = "img/mid-page-accent.jpg";
+

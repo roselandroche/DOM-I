@@ -55,11 +55,8 @@ navigation[5].textContent = "Contact";
 logo.prepend(navigation);
 
 // Update 'cta' section
-const ctaTitle = document.getElementsByTagName('h1');
-ctaTitle[0].textContent = "Dom Is Awesome";
-
-// Add ctaTitle to page
-logo.append(ctaTitle);
+const ctaTitle = document.querySelector('h1');
+ctaTitle.textContent = "Dom Is Awesome";
 
 // Update button
 const startButton = document.querySelector('button');

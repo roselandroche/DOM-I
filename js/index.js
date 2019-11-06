@@ -40,3 +40,84 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// Update nav content
+const navigation = document.querySelectorAll('a');
+
+navigation[0].textContent = "Services";
+navigation[1].textContent = "Product";
+navigation[2].textContent = "Vision";
+navigation[3].textContent = "Features";
+navigation[4].textContent = "About";
+navigation[5].textContent = "Contact";
+
+// Make nav green
+navigation.forEach(navItem => navItem.style.color = "green");
+
+// Add two new nav items
+const reviews = document.createElement('a');
+reviews.textContent = "Reviews";
+reviews.href = "#";
+reviews.style.color = "purple";
+navigation[5].append(reviews);
+
+const intro = document.createElement('a');
+intro.textContent = "Introduction";
+intro.href = "#";
+intro.style.color = "purple";
+navigation[0].prepend(intro);
+
+// Update 'cta' section
+const ctaTitle = document.querySelector('h1');
+ctaTitle.innerText = "Dom\nIs\nAwesome";
+
+// Update button
+const startButton = document.querySelector('button');
+startButton.textContent = "Get Started";
+
+// Add img
+const ctaImg = document.getElementById('cta-img');
+ctaImg.src = "img/header-img.png";
+
+// Update top-content h4 text content
+const topText = document.querySelectorAll('.top-content h4');
+topText[0].textContent = "Features";
+topText[1].textContent = "About";
+
+// Add topText[0] to page
+ctaImg.append(topText);
+
+// Update top-content p text
+const topPar = document.querySelectorAll('.top-content p');
+topPar[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+topPar[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+// Update middle-img
+const midImg = document.querySelector('.middle-img');
+midImg.src = "img/mid-page-accent.jpg";
+
+// Update bottom-content h4
+const bottomHeading = document.querySelectorAll('.bottom-content h4');
+bottomHeading[0].textContent = "Services";
+bottomHeading[1].textContent = "Product";
+bottomHeading[2].textContent = "Vision";
+
+// Update bottom-content p
+const bottomPar = document.querySelectorAll('.bottom-content p');
+bottomPar[0].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+bottomPar[1].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+bottomPar[2].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+// Update contact
+const contTitle = document.querySelector('.contact h4');
+contTitle.textContent = "Contact";
+
+const contPar = document.querySelectorAll('.contact p');
+contPar[0].innerText = "123 Way 456 Street\nSomewhere, USA";
+contPar[1].textContent = "1 (888) 888-8888";
+contPar[2].textContent = "sales@greatidea.io";
+
+// Update footer
+const foot = document.querySelector('footer p');
+foot.textContent = "Copyright Great Idea! 2018";
+foot.style.fontSize = "2.4rem";
